@@ -64,83 +64,116 @@
             min-width: 250px;
          }
          .hero-image {
-            background-image: url(./assets/hero-2.jpg);
+            background-image: url(./images/hero.jpg);
             padding:14rem 0
          }
-      .info-box__wrapper-icon h6 {
-         margin-bottom: 15px;
-      }
-      .list-inline-5 > li.list-counter {
-         padding-left: 60px;
-         text-align: left;
-         cursor: pointer;
-      }
-      .info-contact .info-box {
-         padding: 2rem 25px;
-         margin: 1rem 0;
-         background: rgba(0,0,0,.03);
-         border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-         border: 1px solid rgba(0,0,0,.125);
-         transition: all 0.4s;
-      }
-      .info-contact .info-box:hover {
-         background: rgba(0,0,0,.08);
-      }
-      .card-header {
-         border: 0;
-      }
-      .card-title {
-         cursor: pointer;
-         margin-bottom: 0;
-      }
-      .additional-text {
-        color:rgb(100, 100, 100);font-style:italic;text-align:right;
-      }
-      .brk-header__main-bar {
-         padding-top: 10px;
-         height: 72px;
-      }
-      .brk-header__logo-2 {
-         height: 50px !important;
-      }
-      .brk-header-mobile__logo {
-         display: none
-      }
-      .list-inline-5>li.list-counter {
-         border: 1px solid #023992;
-      }
-      .title-footer-help {
-         color:#023992;font-size:16px
-      }
-      .button-here {
-         font-size:16px;
-         font-weight: 800;
-         text-decoration: underline;
-      }
-      .mobile-cta {
-         position: fixed;
-         bottom: 0;
-         left: 0;
-         right: 0;
-         background-color: #033a92;
-         line-height: 1.6;
-         text-align: center;
-         padding: 15px 0;
-         box-shadow: 0px 2px 11px #00000091;
-         color: white;
-         font-weight: 800;
-         z-index: 9;
-         font-size: 16px;
-         letter-spacing: 0.5px;
-         display: none
-      }
+         .hero-image-2 {
+            background-image: url(./images/campana.jpg);
+            padding:14rem 0
+         }
+         .breadcrumbs__wrapper {
+            position: relative;
+            margin-top: -48px;
+         }
+         .breadcrumbs__wrapper .container {
+            min-width: 1000px;
+         }
+         .breadcrumbs__wrapper .breadcrumb {
+            background-color: #023992;
+         }
+         .breadcrumbs__wrapper .breadcrumb h2{
+            color: #ffffff;
+         }
+         .info-box__wrapper-icon h6 {
+            margin-bottom: 15px;
+         }
+         .list-inline-5 > li.list-counter {
+            padding-left: 60px;
+            text-align: left;
+            cursor: pointer;
+         }
+         .info-contact .info-box {
+            padding: 2rem 25px;
+            margin: 1rem 0;
+            background: rgba(0,0,0,.03);
+            border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+            border: 1px solid rgba(0,0,0,.125);
+            transition: all 0.4s;
+         }
+         .info-contact .info-box:hover {
+            background: rgba(0,0,0,.08);
+         }
+         .card-header {
+            border: 0;
+         }
+         .card-title {
+            cursor: pointer;
+            margin-bottom: 0;
+         }
+         .additional-text {
+         color:rgb(100, 100, 100);font-style:italic;text-align:right;
+         }
+         .brk-header__main-bar {
+            padding-top: 10px;
+            height: 72px;
+         }
+         .brk-header__logo-2 {
+            height: 50px !important;
+         }
+         .brk-header-mobile__logo {
+            display: none
+         }
+         .list-inline-5>li.list-counter {
+            border: 1px solid #023992;
+         }
+         .title-footer-help {
+            color:#023992;font-size:16px
+         }
+         .button-here {
+            font-size:16px;
+            font-weight: 800;
+            text-decoration: underline;
+         }
+         .mobile-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #033a92;
+            line-height: 1.6;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0px 2px 11px #00000091;
+            color: white;
+            font-weight: 800;
+            z-index: 9;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            display: none
+         }
       @media(max-width: 676px){
          .mobile-cta { display: block;}
+         .breadcrumbs__wrapper {
+            position: relative
+         }
+         .breadcrumbs__wrapper .container {
+            min-width: unset;
+         }
          .brk-header__logo-2 {
             height: 42px !important;
          }
-         .hero-image {
+         .hero-image{
             padding: 8rem 0
+         }
+         .hero-image-2 {
+            padding: 15rem 0;
+            background-image: url(./images/banner.jpg);
+         }
+         .hero-image-2 h3, .hero-image-2 h2, .hero-image-2 a {
+            display: none
+         }
+         .breadcrumbs__wrapper .breadcrumb h2 {
+            padding: 1rem;
          }
          .h3, h3 {
             font-size: 24px;
@@ -212,30 +245,69 @@
       
       <div class="main-wrapper">
          <main class="main-container">
-            <div class="breadcrumbs__section breadcrumbs__section-dark bg__style brk-library-rendered lazyloaded hero-image" >
-               <div class="brk-base-bg-6 breadcrumb-bg full__size-absolute"></div>
-               <div class="container">
-                     <div class="row align-items-center">
-                        <div class="col-12 col-lg-6">
-                           <div class=" pr-xs-0 breadcrumbs__title">
-                              <h2 class="brk-white-font-color font__weight-semibold font__size-48 line__height-68 text-center main-title">
-                                 AXA & PEPSICO
-                              </h2>
-                              <h3  class="brk-white-font-color font__weight-semibold text-center">Se unen para ofrecerte la mejor protección para ti, tu familia y tu tienda</h3>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                          
+            <div id="slider-hero" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+
+
+                  <div class="carousel-item active">
+                     <div class="breadcrumbs__section breadcrumbs__section-dark bg__style brk-library-rendered lazyloaded hero-image" >
+                        <div class="container">
+                              <div class="row align-items-center">
+                                 <div class="col-12 col-lg-6">
+                                    <div class=" pr-xs-0 breadcrumbs__title">
+                                       <h2 class="brk-white-font-color font__weight-semibold font__size-48 line__height-68 text-center main-title wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.9s">
+                                          AXA & PEPSICO
+                                       </h2>
+                                       <h3  class="brk-white-font-color font__weight-semibold text-center wow fadeIn" data-wow-duration="0.8s" data-wow-delay="1.5s">Se unen para ofrecerte la mejor protección para ti, tu familia y tu tienda</h3>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-lg-6">
+                                 
+                                 </div>
+                              </div>
                         </div>
                      </div>
                   </div>
-               <div class="breadcrumbs__wrapper">
-                  <div class="container">
-                     <ol class="breadcrumb">
-                        <h2 class="subtitle">Exclusivo para socios Titanio y Estrella</h2>
-                     </ol>
-                     
+
+                  <div class="carousel-item">
+                     <div class="breadcrumbs__section breadcrumbs__section-dark bg__style brk-library-rendered lazyloaded hero-image-2" >
+                        <div class="container">
+                              <div class="row align-items-center">
+                                 <div class="col-12 col-lg-6">
+                                    <div class=" pr-xs-0 breadcrumbs__title text-center">
+                                       <h2 class="brk-white-font-color font__weight-semibold font__size-48 line__height-68 text-center main-title wow fadeIn" data-wow-delay="0.3s">
+                                          ¡GANA 100 Pesos!
+                                       </h2>
+                                       <h3  class="brk-white-font-color font__weight-semibold text-center wow fadeIn" data-wow-delay="1.5s">Actualiza tus datos y regístrate para recibir tu código digital por correo electrónico.</h3>
+                                       <a target="_blank" href="./images/banner.jpg" class="btn btn-inside-out btn-lg btn-icon border-radius-25 brk-library-rendered rendered text-center mt-25 wow fadeInUp" data-wow-delay="2s">
+                                          <i class="fa fa-arrow-right icon-inside" aria-hidden="true"></i>
+                                          <span class="before">Ver más</span><span class="text">Ver campaña</span><span class="after">Ver más</span>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-lg-6">
+                                 
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
                   </div>
+               
+               </div>
+               <a class="carousel-control-prev" href="#slider-hero" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slider-hero" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="breadcrumbs__wrapper">
+               <div class="container">
+                  <ol class="breadcrumb">
+                     <h2 class="subtitle">Exclusivo para socios Titanio y Estrella</h2>
+                  </ol>
                </div>
             </div>
 
@@ -1013,15 +1085,13 @@
       <!--a href="#" id="toTop" style="display: inline;">Activa tus beneficios</a-->
       <script src="assets/jquery.js"></script>
       <script defer="defer" src="./assets/scripts.min.js"></script>
+      <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
       <script src="assets/jquery.magnific-popup.js"></script>
       <script type="text/javascript">
-         $(function ($) {
-             "use strict";
-                  $('.video-play-btn').magnificPopup({
-                     type: 'video'
-                 });
-         });
+            $('.carousel').carousel({
+               interval: 5000
+            })
       </script>
    </body>
 </html>
